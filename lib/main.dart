@@ -39,14 +39,18 @@ class _MyHomePageState extends State<MyHomePage> {
 
   @override
   Widget build(BuildContext context) {
+    final Size size = MediaQuery.of(context).size;
+    final height = size.height;
+    final width = size.width;
+
     return Scaffold(
       appBar: AppBar(
         title: Text(widget.title),
       ),
       body: Center(
         child: Container(
-          height: 300,
-          width: 200,
+          height: height * 0.5,
+          width: width * 0.3,
           color: Colors.cyanAccent,
           child: Center(
             child: Column(
