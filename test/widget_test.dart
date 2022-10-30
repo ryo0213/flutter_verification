@@ -9,11 +9,13 @@ void main() {
     // 配列で複数解像度を追加していく
     final builder = DeviceBuilder()
       ..overrideDevicesForAllScenarios(devices: [
-        Device.phone,
-        Device.iphone11,
-        Device.tabletLandscape,
-        Device.tabletPortrait,
-        Device(name: 'phone_test', size: Size(500, 500)),
+        // Device.phone,
+        // Device.iphone11,
+        // Device.tabletLandscape,
+        // Device.tabletPortrait,
+        Device(name: '16:9', size: Size(360, 640)),
+        Device(name: '19.5:9', size: Size(360, 780)),
+        Device(name: '20:9', size: Size(360, 800)),
 
       ])
 
