@@ -48,22 +48,32 @@ class _MyHomePageState extends State<MyHomePage> {
         title: Text(widget.title),
       ),
       body: Center(
-        child: Container(
-          height: height * 0.5,
-          width: width * 0.3,
-          color: Colors.cyanAccent,
-          child: Center(
-            child: Column(
-              mainAxisAlignment: MainAxisAlignment.center,
-              children: <Widget>[
-                const Text(
-                  'You have pushed the button this many times:',
+        child: AspectRatio(
+          /// 9/19.5
+          // aspectRatio: 9/19.5,
+          aspectRatio: 360/(780 + 80),
+          child: Container(
+            color: Colors.grey,
+            child: Center(
+              child: Container(
+                height: height * 0.5,
+                width: width * 0.3,
+                color: Colors.cyanAccent,
+                child: Center(
+                  child: Column(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: <Widget>[
+                      const Text(
+                        'You have pushed the button this many times:',
+                      ),
+                      Text(
+                        '$_counter',
+                        style: Theme.of(context).textTheme.headline4,
+                      ),
+                    ],
+                  ),
                 ),
-                Text(
-                  '$_counter',
-                  style: Theme.of(context).textTheme.headline4,
-                ),
-              ],
+              ),
             ),
           ),
         ),
