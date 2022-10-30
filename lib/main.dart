@@ -47,7 +47,8 @@ class _MyHomePageState extends State<MyHomePage> {
         child: Container(
           height: 300,
           width: 200,
-          color: Colors.amber,
+          // color: Colors.amber,
+          color: Colors.black,
           child: Center(
             child: AspectRatio(
               aspectRatio: 1/2,

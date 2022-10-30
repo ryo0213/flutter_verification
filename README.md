@@ -2,6 +2,9 @@
  
 A new Flutter project.
 検証用プロジェクト
+GoldenTestの検証(アスペクト比率の異なる画面でUIのチェックを行う)
+https://zenn.dev/matsumaru/articles/c2bf8ec468cff8
+https://zenn.dev/matsumaru/articles/44b4dc9927bb41
 
 ## Getting Started
 
