@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_verification/sync_processing.dart';
+import 'package:flutter_verification/future_example.dart';
+import 'package:flutter_verification/sync_processing_example.dart';
 
 
 void main() {
@@ -43,11 +44,19 @@ class _MyHomePageState extends State<MyHomePage> {
           children: <Widget>[
             ElevatedButton(
               onPressed: () {
-                final docs = SyncProcessing.pickAllDocuments();
+                final docs = SyncProcessingExample.pickAllDocuments();
                 print(docs);
                 print('next....');
               },
-              child: const Text('同期処理を実行'),
+              child: const Text('同期処理を実行する例'),
+            ),
+            ElevatedButton(
+              onPressed: () {
+                final docs = FutureExample.pickAllDocuments();
+                print(docs);
+                print('next....');
+              },
+              child: const Text('時間が掛かる関数の返り値の型をFutureとする例'),
             ),
           ],
         ),

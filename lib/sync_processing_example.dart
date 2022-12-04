@@ -1,6 +1,6 @@
 
 // 通常の同期処理
-class SyncProcessing {
+class SyncProcessingExample {
 
   static String pickAllDocuments() {
     String docs = '';
