@@ -2,6 +2,8 @@
  
 A new Flutter project.
 検証用プロジェクト
+非同期処理の学習
+https://zenn.dev/iwaku/articles/2020-12-29-iwaku
 
 ## Getting Started
 
