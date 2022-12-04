@@ -9,4 +9,9 @@ class FutureExample {
     return Future<String>.value(docs);
   }
 
+  static asyncExe() async{
+    final docs =  await FutureExample.pickAllDocuments();
+    print(docs);
+  }
+
 }
