@@ -58,6 +58,18 @@ class _MyHomePageState extends State<MyHomePage> {
               },
               child: const Text('時間が掛かる関数の返り値の型をFutureとする例'),
             ),
+            
+            Text('・Futureクラスのthen関数を利用し、時間が掛かる関数の値処理が終わる前に次の処理実施'),
+            Text('・then関数の引数として与えたコールバック関数は、時間が掛かる関数の値処理が終わった際に実行'),
+            ElevatedButton(
+              onPressed: () {
+                final docs = FutureExample.pickAllDocuments();
+                docs.then((value) => print(value));
+                // print(docs);
+                print('next....');
+              },
+              child: const Text('非同期処理：Futureクラスのthen関数を利用'),
+            ),
           ],
         ),
       ),
